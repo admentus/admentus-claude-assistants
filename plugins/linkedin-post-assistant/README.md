@@ -1,0 +1,59 @@
+# LinkedIn Post Assistant
+
+*Version 0.1.0 · November 2026 · from Jeff Chastain, Admentus*
+
+You know what to say. Writing it takes the time you don't have. Give this
+assistant ten minutes of notes a week, typed or as a voice-memo transcript,
+and it turns them into LinkedIn posts that sound like you. It also keeps a
+bank of post ideas between sessions, so you're never starting from a blank
+page.
+
+**It never opens LinkedIn and never posts.** You copy, edit and post yourself,
+so there's no risk to your account and no browser extension to install.
+
+## What you need
+
+- A paid Claude plan that includes Cowork (Pro or above)
+- The Claude desktop app, for Mac or Windows (claude.ai/download)
+- Recommended: **Claude Brain**, from the same list. The post assistant reads
+  it, so setup is shorter and drafts start closer to your voice.
+
+## Install it
+
+1. In the Claude app, open **Customize**, then **Browse plugins**, then the
+   **Personal** tab.
+2. Click **+**, choose **Add marketplace from GitHub**, and enter
+   **admentus/assistants**. (Skip this if you've added it before.)
+3. Install **LinkedIn Post Assistant**.
+4. In Cowork, work from your **Claude** folder (the one with your brain, if
+   you have one) and say: **Set up my post assistant.**
+
+Setup takes about ten minutes. It asks what you want to be known for, who
+you're writing for, your topics, and for a few posts you've written. Then it
+starts your ideas bank and drafts your first post with you.
+
+## Things to say
+
+- **Draft a post about...**, or just paste your notes
+- **Save a post idea: ...** whenever something comes up
+- **What should I post this week?**
+- **Draft this week's posts** to turn your saved ideas into drafts
+- **Make it shorter** / **punchier opening** / **say it like this...**
+- **I posted it**, so later ideas don't repeat it
+
+## What it never does
+
+Open LinkedIn. Post, comment or like anything. Make up a story, a number or a
+client. Name a client unless you say you have permission.
+
+## Where things are saved
+
+In a `linkedin-posts` folder inside your working folder: your post profile,
+your ideas bank, every draft, and a log of what you've posted. Plain files you
+can open and edit.
+
+## If your firm reviews posts
+
+Financial services, insurance, healthcare and law firms often require posts to
+be approved before they go up. Setup asks, and every draft reminds you when it
+applies.

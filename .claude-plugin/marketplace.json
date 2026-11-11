@@ -39,6 +39,23 @@
         "replies",
         "drafts"
       ]
+    },
+    {
+      "name": "linkedin-post-assistant",
+      "source": "./plugins/linkedin-post-assistant",
+      "description": "Turns your notes, a client question or a ten-minute voice memo into LinkedIn posts that sound like you, and keeps a bank of post ideas between sessions. It never opens LinkedIn and never posts: you copy, edit and post yourself, so there's no risk to your account. Works best with Claude Brain.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Jeff Chastain, Admentus"
+      },
+      "keywords": [
+        "linkedin",
+        "posts",
+        "content",
+        "writing",
+        "voice",
+        "ideas"
+      ]
     }
   ]
 }
