@@ -25,7 +25,7 @@ so there's no risk to your account and no browser extension to install.
 2. Click **Add** (top right), then **Add marketplace**, then **Add from a
    repository**. Enter **admentus/assistants**, leave **Sync automatically**
    on, and click **Sync**. (Skip this if you've added it before.)
-3. Click **Add** next to **LinkedIn post assistant**.
+3. Click **Add** next to **LinkedIn Post Assistant**.
 4. Start a new chat, click **+**, choose **Add folder**, and pick your
    **Claude** folder (the one with your brain, if you have one). Then say:
    **Set up my post assistant.**

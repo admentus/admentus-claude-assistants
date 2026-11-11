@@ -1,9 +1,11 @@
 {
   "name": "claude-brain",
+  "displayName": "Claude Brain",
   "version": "0.1.0",
   "description": "A 20-minute interview that teaches Claude your practice, your clients and your voice. It writes a CLAUDE.md file and a small knowledge base into a folder on your computer, where you can read and edit them, so every assistant starts out knowing you. Say \"Set up my Claude brain\" to start.",
   "author": {
-    "name": "Jeff Chastain, Admentus"
+    "name": "Admentus",
+    "url": "https://admentus.com"
   },
   "homepage": "https://admentus.com",
   "keywords": ["claude.md", "knowledge base", "about me", "voice", "context", "interview"]

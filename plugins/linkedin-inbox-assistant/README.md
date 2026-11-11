@@ -62,7 +62,7 @@ risk. The assistant won't read LinkedIn until you have.
    repository**. Enter **admentus/assistants**, leave **Sync automatically**
    on, and click **Sync**. (You only do this once. It adds all of my
    assistants.)
-3. Click **Add** next to **LinkedIn inbox assistant**.
+3. Click **Add** next to **LinkedIn Inbox Assistant**.
 4. Start a new chat. If you have a Claude brain, click **+**, choose **Add
    folder** and pick your **Claude** folder. Then say: **Set up my LinkedIn
    inbox assistant.**

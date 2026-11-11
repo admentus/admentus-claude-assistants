@@ -26,9 +26,9 @@ they read LinkedIn in your own Chrome.
 
 ## The assistants
 
-- **Claude Brain** (`claude-brain`). A 20-minute interview that teaches Claude your practice, your clients and your voice. It writes a CLAUDE.md file and a small knowledge base into a folder on your computer, where you can read and edit them, so every assistant starts out knowing you. Say "Set up my Claude brain" to start.
-- **LinkedIn Inbox Assistant** (`linkedin-inbox-assistant`). Checks your LinkedIn messages three times a weekday, tells you who wrote and who is waiting on you, and drafts a suggested reply for each. Never sends anything. Needs Google Chrome with the Claude in Chrome extension. It reads LinkedIn by working your Chrome, which LinkedIn's User Agreement prohibits, so setup shows a warning and asks you to confirm you understand the risk before it reads anything.
-- **LinkedIn Post Assistant** (`linkedin-post-assistant`). Turns your notes, a client question or a ten-minute voice memo into LinkedIn posts that sound like you, and keeps a bank of post ideas between sessions. It never opens LinkedIn and never posts: you copy, edit and post yourself, so there's no risk to your account. Works best with Claude Brain.
+- **Claude Brain**. A 20-minute interview that teaches Claude your practice, your clients and your voice. It writes a CLAUDE.md file and a small knowledge base into a folder on your computer, where you can read and edit them, so every assistant starts out knowing you. Say "Set up my Claude brain" to start.
+- **LinkedIn Inbox Assistant**. Checks your LinkedIn messages three times a weekday, tells you who wrote and who is waiting on you, and drafts a suggested reply for each. Never sends anything. Needs Google Chrome with the Claude in Chrome extension. It reads LinkedIn by working your Chrome, which LinkedIn's User Agreement prohibits, so setup shows a warning and asks you to confirm you understand the risk before it reads anything.
+- **LinkedIn Post Assistant**. Turns your notes, a client question or a ten-minute voice memo into LinkedIn posts that sound like you, and keeps a bank of post ideas between sessions. It never opens LinkedIn and never posts: you copy, edit and post yourself, so there's no risk to your account. Works best with Claude Brain.
 
 ## ⚠️ The LinkedIn assistants
 

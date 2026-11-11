@@ -22,7 +22,7 @@ reads, and a set of knowledge files it reads when a task needs them.
 2. Click **Add** (top right), then **Add marketplace**, then **Add from a
    repository**. Enter **admentus/assistants**, leave **Sync automatically**
    on, and click **Sync**. (Skip this if you've added it before.)
-3. Click **Add** next to **Claude brain**.
+3. Click **Add** next to **Claude Brain**.
 4. Start a new chat, click **+** in the message box, choose **Add folder**,
    and pick a folder called **Claude** in your Documents (create it if it
    isn't there).
