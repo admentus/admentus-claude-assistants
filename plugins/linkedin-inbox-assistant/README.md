@@ -59,7 +59,7 @@ risk. The assistant won't read LinkedIn until you have.
 1. In the Claude desktop app, start a new chat, click **+** in the message
    box, and choose **Add plugins**.
 2. Click **Add** (top right), then **Add marketplace**, then **Add from a
-   repository**. Enter **admentus/assistants**, leave **Sync automatically**
+   repository**. Enter **admentus/admentus-claude-assistants**, leave **Sync automatically**
    on, and click **Sync**. (You only do this once. It adds all of my
    assistants.)
 3. Click **Add** next to **LinkedIn Inbox Assistant**.

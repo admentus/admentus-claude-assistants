@@ -12,7 +12,7 @@ something else, ask me and I'll point you the right way.
 1. In the Claude desktop app, start a new chat, click **+** in the message
    box, and choose **Add plugins**.
 2. Click **Add** (top right), then **Add marketplace**, then **Add from a
-   repository**. Enter **admentus/assistants**, leave **Sync automatically**
+   repository**. Enter **admentus/admentus-claude-assistants**, leave **Sync automatically**
    on, and click **Sync**.
 3. Click **Add** next to the assistant you want, then follow its setup.
 

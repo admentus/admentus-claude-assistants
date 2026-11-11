@@ -1,6 +1,6 @@
 ---
 name: check-linkedin-inbox
-description: Checks the user's LinkedIn messages, reports new messages and conversations waiting on the user's reply, and drafts a suggested reply for each new one. Never sends anything. Use when the user says "check my LinkedIn inbox", "any new LinkedIn messages", "who's waiting on me on LinkedIn", "draft a LinkedIn reply to <name>", "check my LinkedIn inbox in demo mode", or when the scheduled LinkedIn inbox check runs.
+description: Checks the user's LinkedIn messages, reports new messages and conversations waiting on the user's reply, and drafts a suggested reply for each new one. Never sends anything. Use when the user says "check my LinkedIn inbox", "any new LinkedIn messages", "who's waiting on me on LinkedIn", "draft a LinkedIn reply to" followed by a name, "check my LinkedIn inbox in demo mode", or when the scheduled LinkedIn inbox check runs.
 ---
 
 # Check my LinkedIn inbox
@@ -186,7 +186,7 @@ What to do:
 
 ## When the user asks for one reply
 
-For "draft a LinkedIn reply to <name>": open
+For "draft a LinkedIn reply to" followed by a name: open
 `https://www.linkedin.com/messaging/?searchTerm=<First+Last>`, wait for the
 results to settle, and open the matching conversation. If more than one person
 matches, list them and ask which one. If none match, try the last name alone

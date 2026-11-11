@@ -23,7 +23,7 @@ so there's no risk to your account and no browser extension to install.
 1. In the Claude desktop app, start a new chat, click **+** in the message
    box, and choose **Add plugins**.
 2. Click **Add** (top right), then **Add marketplace**, then **Add from a
-   repository**. Enter **admentus/assistants**, leave **Sync automatically**
+   repository**. Enter **admentus/admentus-claude-assistants**, leave **Sync automatically**
    on, and click **Sync**. (Skip this if you've added it before.)
 3. Click **Add** next to **LinkedIn Post Assistant**.
 4. Start a new chat, click **+**, choose **Add folder**, and pick your
