@@ -22,6 +22,7 @@ they read LinkedIn in your own Chrome.
 
 ## The assistants
 
+- **Claude Brain** (`claude-brain`). A 20-minute interview that teaches Claude your practice, your clients and your voice. It writes a CLAUDE.md file and a small knowledge base into a folder on your computer, where you can read and edit them, so every assistant starts out knowing you. Say "Set up my Claude brain" to start.
 - **LinkedIn Inbox Assistant** (`linkedin-inbox-assistant`). Checks your LinkedIn messages three times a weekday, tells you who wrote and who is waiting on you, and drafts a suggested reply for each. Never sends anything. Needs Google Chrome with the Claude in Chrome extension. It reads LinkedIn by working your Chrome, which LinkedIn's User Agreement prohibits, so setup shows a warning and asks you to confirm you understand the risk before it reads anything.
 
 ## ⚠️ The LinkedIn assistants
