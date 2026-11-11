@@ -89,8 +89,8 @@ I'll turn them into drafts. During the week, say 'save a post idea' whenever
 something comes up."*
 
 Offer a weekly scheduled task: *"Draft this week's LinkedIn posts from my
-ideas,"* Mondays at 8 AM. If they want it, tell them how (type `/schedule` in
-Cowork, or open Scheduled in the sidebar), or create it yourself if you can,
+ideas,"* Mondays at 8 AM. If they want it, tell them how (open Scheduled in the Claude app's left sidebar,
+and pick their Claude folder when it asks which folder to work in), or create it yourself if you can,
 after confirming the time. It needs their computer on with the Claude app open.
 
 ## 8. Draft the first one together

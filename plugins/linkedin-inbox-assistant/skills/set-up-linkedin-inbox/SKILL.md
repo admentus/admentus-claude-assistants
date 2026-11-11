@@ -57,9 +57,8 @@ done:
    they use in the app.
 2. **They're signed in to LinkedIn in that Chrome.** They sign in themselves.
    Never ask for their password and never type it.
-3. **Cowork is set to use it.** In the Claude app's Settings, under Cowork,
-   the browser should be set to Claude in Chrome rather than the built-in
-   browser.
+3. **Claude is allowed to use it.** In the Claude app, Settings, then
+   Capabilities: Claude in Chrome is turned on.
 
 Then open https://www.linkedin.com/messaging/ once through Claude in Chrome to
 confirm it works. If it shows a sign-in or security page, stop and ask them to
@@ -130,7 +129,9 @@ indicators."* The user changes this setting themselves. Don't do it for them.
 
 Tell the user how to set the schedule:
 
-1. Type `/schedule` in Cowork, or open **Scheduled** in the sidebar.
+1. Open **Scheduled** in the Claude app's left sidebar and add a task. If
+   it asks which folder to work in, pick their **Claude** folder so the
+   check can read their brain.
 2. Name it **LinkedIn inbox check**.
 3. For what to do, enter: **Check my LinkedIn inbox**.
 4. Set it for weekdays at the times they chose.

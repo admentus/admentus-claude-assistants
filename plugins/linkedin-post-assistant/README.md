@@ -13,20 +13,20 @@ so there's no risk to your account and no browser extension to install.
 
 ## What you need
 
-- A paid Claude plan that includes Cowork (Pro or above)
+- A paid Claude plan (Pro or above)
 - The Claude desktop app, for Mac or Windows (claude.ai/download)
 - Recommended: **Claude Brain**, from the same list. The post assistant reads
   it, so setup is shorter and drafts start closer to your voice.
 
 ## Install it
 
-1. In the Claude app, open **Customize**, then **Browse plugins**, then the
-   **Personal** tab.
-2. Click **+**, choose **Add marketplace from GitHub**, and enter
+1. In the Claude desktop app, open **Customize** in the left sidebar, then
+   the **Plugins** tab.
+2. Click **Add**, choose **Add marketplace**, and enter
    **admentus/assistants**. (Skip this if you've added it before.)
 3. Install **LinkedIn Post Assistant**.
-4. In Cowork, work from your **Claude** folder (the one with your brain, if
-   you have one) and say: **Set up my post assistant.**
+4. In a Claude conversation with access to your **Claude** folder (the one
+   with your brain, if you have one), say: **Set up my post assistant.**
 
 Setup takes about ten minutes. It asks what you want to be known for, who
 you're writing for, your topics, and for a few posts you've written. Then it

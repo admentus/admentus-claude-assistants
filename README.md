@@ -1,6 +1,6 @@
 # Assistants for Claude, from Admentus
 
-Small assistants for Claude's Cowork mode. Each one does one job and drafts
+Small assistants for the Claude desktop app. Each one does one job and drafts
 for you. None of them sends, posts or accepts anything on your behalf.
 
 I'm Jeff Chastain. I build these for the people I work with, and I run bigger
@@ -9,13 +9,13 @@ something else, ask me and I'll point you the right way.
 
 ## Add them to Claude
 
-1. In the Claude app, open **Customize**, then **Browse plugins**, then the
-   **Personal** tab.
-2. Click **+**, choose **Add marketplace from GitHub**, and enter
+1. In the Claude desktop app, open **Customize** in the left sidebar, then
+   the **Plugins** tab.
+2. Click **Add**, choose **Add marketplace**, and enter
    **admentus/assistants**.
 3. Install the assistant you want, then follow its setup.
 
-You need a paid Claude plan that includes Cowork (Pro or above) and the Claude
+You need a paid Claude plan (Pro or above) and the Claude
 desktop app (claude.ai/download). The LinkedIn assistants also need Google
 Chrome with the Claude in Chrome extension, signed in to LinkedIn, because
 they read LinkedIn in your own Chrome.

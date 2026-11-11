@@ -35,7 +35,7 @@ risk. The assistant won't read LinkedIn until you have.
 
 ## What you need
 
-- A paid Claude plan that includes Cowork (Pro or above)
+- A paid Claude plan (Pro or above)
 - The Claude desktop app, for Mac or Windows
 - Google Chrome with the **Claude in Chrome** extension. The assistant reads
   LinkedIn in your own Chrome, so it won't work without it.
@@ -51,18 +51,18 @@ risk. The assistant won't read LinkedIn until you have.
    install the Claude in Chrome extension from Anthropic. Pin it and sign in
    with the same Claude account.
 4. Make sure you're signed in to LinkedIn in that Chrome.
-5. In the Claude app's Settings, under Cowork, set the browser to Claude in
-   Chrome.
+5. In the Claude app, open **Settings**, then **Capabilities**, and turn on
+   **Claude in Chrome**.
 
 ## Install the assistant
 
-1. In the Claude app, open **Customize**, then **Browse plugins**, then the
-   **Personal** tab.
-2. Click **+**, choose **Add marketplace from GitHub**, and enter
+1. In the Claude desktop app, open **Customize** in the left sidebar, then
+   the **Plugins** tab.
+2. Click **Add**, choose **Add marketplace**, and enter
    **admentus/assistants**. (You only do this once. It adds all of my
    assistants.)
 3. Install **LinkedIn Inbox Assistant**.
-4. In Cowork, say: **Set up my LinkedIn inbox assistant.**
+4. In a new Claude conversation, say: **Set up my LinkedIn inbox assistant.**
 
 If I sent you a `.plugin` file instead, use the upload option on the Plugins
 page in step 1 and skip steps 2 and 3.
@@ -110,5 +110,5 @@ before you answer.
 ## If it stops for a security check
 
 Open LinkedIn yourself and sign in or finish the check. Pause the scheduled
-check for a few days (**Scheduled** in the sidebar). Turn it back on when
+check for a few days (**Scheduled** in the left sidebar). Turn it back on when
 LinkedIn looks normal.

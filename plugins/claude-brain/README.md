@@ -12,19 +12,20 @@ reads, and a set of knowledge files it reads when a task needs them.
 
 ## What you need
 
-- A paid Claude plan that includes Cowork (Pro or above)
+- A paid Claude plan (Pro or above)
 - The Claude desktop app, for Mac or Windows (claude.ai/download)
 
 ## Install it
 
-1. In the Claude app, open **Customize**, then **Browse plugins**, then the
-   **Personal** tab.
-2. Click **+**, choose **Add marketplace from GitHub**, and enter
+1. In the Claude desktop app, open **Customize** in the left sidebar, then
+   the **Plugins** tab.
+2. Click **Add**, choose **Add marketplace**, and enter
    **admentus/assistants**. (Skip this if you've added it before.)
 3. Install **Claude Brain**.
-4. In Cowork, choose a folder to work in. A new folder called **Claude** in
-   your Documents folder works well.
-5. Say: **Set up my Claude brain.**
+4. In the Claude desktop app, give Claude access to a folder on your
+   computer. A new folder called **Claude** in your Documents folder works
+   well.
+5. In a conversation with that folder, say: **Set up my Claude brain.**
 
 ## What it asks
 

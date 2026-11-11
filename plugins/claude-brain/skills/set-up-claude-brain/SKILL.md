@@ -28,13 +28,14 @@ Tell the user, in your own words, briefly:
 
 ## 2. Check the folder
 
-The brain lives in the folder this Cowork session is working in.
+The brain lives in a folder on their computer that Claude can reach in this
+conversation (given in the Claude desktop app).
 
-- **No folder selected:** ask the user to choose one before going on. Suggest
-  a new folder named **Claude** in their Documents folder, used as their
-  everyday Cowork folder. Then they start a new session in it and say
-  "Set up my Claude brain" again.
-- **A folder is selected:** tell them which one and confirm it's the folder
+- **No folder:** ask the user to give Claude access to one in the Claude
+  desktop app before going on. Suggest a new folder named **Claude** in
+  their Documents folder, used every day. Then they start a new
+  conversation with it and say "Set up my Claude brain" again.
+- **A folder is available:** tell them which one and confirm it's the folder
   they'll work from day to day. If not, same as above.
 - **It already has a `CLAUDE.md`:** ask whether to update what's there (use
   the update-claude-brain skill instead) or start fresh. Starting fresh: rename
@@ -88,9 +89,8 @@ correct, in the files.
 
 ## 6. Make it load everywhere
 
-Explain: *"Claude reads your brain automatically whenever you work in this
-folder. To remind it in other sessions too, add one line to your Cowork
-settings."*
+Explain: *"Claude reads your brain whenever it works with this folder. To
+point every conversation at it, add one line to your Claude settings."*
 
 Give them this to copy, with their actual folder path filled in:
 
@@ -98,8 +98,8 @@ Give them this to copy, with their actual folder path filled in:
 > business, my clients, my week or anything written in my voice, read its
 > CLAUDE.md and the knowledge files it points to first.
 
-Tell them where it goes: the Claude app's Settings, under Cowork, in the
-global instructions box. Suggest they keep a copy of that line somewhere,
+Tell them where it goes: the Claude app's Settings, then **Your Claude**, in
+**Instructions for Claude**. Suggest they keep a copy of that line somewhere,
 because that setting has been known to lose recent edits. Their brain is
 safe either way: it lives in the files.
 
@@ -109,8 +109,8 @@ Tell them what they can say from now on:
 
 - **"Update my brain"** or **"Remember that..."** to change or add something
 - **"What do you know about me?"** to review it
-- Start Cowork in their **Claude** folder so every session starts out knowing
-  them
+- Give Claude their **Claude** folder in each conversation, and pick it for
+  scheduled tasks, so every session starts out knowing them
 
 And: *"Any of my other assistants you install will read this first, so their
 setup will be shorter."*
