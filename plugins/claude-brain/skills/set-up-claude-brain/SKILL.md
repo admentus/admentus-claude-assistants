@@ -31,10 +31,10 @@ Tell the user, in your own words, briefly:
 The brain lives in a folder on their computer that Claude can reach in this
 conversation (given in the Claude desktop app).
 
-- **No folder:** ask the user to give Claude access to one in the Claude
-  desktop app before going on. Suggest a new folder named **Claude** in
-  their Documents folder, used every day. Then they start a new
-  conversation with it and say "Set up my Claude brain" again.
+- **No folder:** ask the user to add one before going on: in a new chat,
+  click **+** in the message box, choose **Add folder**, and pick (or
+  create) a folder named **Claude** in their Documents folder, to use every
+  day. Then they say "Set up my Claude brain" again in that chat.
 - **A folder is available:** tell them which one and confirm it's the folder
   they'll work from day to day. If not, same as above.
 - **It already has a `CLAUDE.md`:** ask whether to update what's there (use
@@ -109,8 +109,8 @@ Tell them what they can say from now on:
 
 - **"Update my brain"** or **"Remember that..."** to change or add something
 - **"What do you know about me?"** to review it
-- Give Claude their **Claude** folder in each conversation, and pick it for
-  scheduled tasks, so every session starts out knowing them
+- Add their **Claude** folder to each new chat (**+**, then **Add folder**),
+  and pick it for scheduled tasks, so every session starts out knowing them
 
 And: *"Any of my other assistants you install will read this first, so their
 setup will be shorter."*

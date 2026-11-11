@@ -56,16 +56,19 @@ risk. The assistant won't read LinkedIn until you have.
 
 ## Install the assistant
 
-1. In the Claude desktop app, open **Customize** in the left sidebar, then
-   the **Plugins** tab.
-2. Click **Add**, choose **Add marketplace**, and enter
-   **admentus/assistants**. (You only do this once. It adds all of my
+1. In the Claude desktop app, start a new chat, click **+** in the message
+   box, and choose **Add plugins**.
+2. Click **Add** (top right), then **Add marketplace**, then **Add from a
+   repository**. Enter **admentus/assistants**, leave **Sync automatically**
+   on, and click **Sync**. (You only do this once. It adds all of my
    assistants.)
-3. Install **LinkedIn Inbox Assistant**.
-4. In a new Claude conversation, say: **Set up my LinkedIn inbox assistant.**
+3. Click **Add** next to **LinkedIn inbox assistant**.
+4. Start a new chat. If you have a Claude brain, click **+**, choose **Add
+   folder** and pick your **Claude** folder. Then say: **Set up my LinkedIn
+   inbox assistant.**
 
-If I sent you a `.plugin` file instead, use the upload option on the Plugins
-page in step 1 and skip steps 2 and 3.
+If I sent you a `.plugin` file instead, choose **Upload plugin** instead of
+**Add marketplace** in step 2, and skip step 3.
 
 Setup takes about ten minutes. It asks how you write and what you want from
 LinkedIn conversations, helps you schedule the checks, and runs the first one

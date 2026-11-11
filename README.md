@@ -9,11 +9,15 @@ something else, ask me and I'll point you the right way.
 
 ## Add them to Claude
 
-1. In the Claude desktop app, open **Customize** in the left sidebar, then
-   the **Plugins** tab.
-2. Click **Add**, choose **Add marketplace**, and enter
-   **admentus/assistants**.
-3. Install the assistant you want, then follow its setup.
+1. In the Claude desktop app, start a new chat, click **+** in the message
+   box, and choose **Add plugins**.
+2. Click **Add** (top right), then **Add marketplace**, then **Add from a
+   repository**. Enter **admentus/assistants**, leave **Sync automatically**
+   on, and click **Sync**.
+3. Click **Add** next to the assistant you want, then follow its setup.
+
+With Sync automatically on, my fixes and new assistants reach you without
+you doing anything.
 
 You need a paid Claude plan (Pro or above) and the Claude
 desktop app (claude.ai/download). The LinkedIn assistants also need Google

@@ -20,13 +20,15 @@ so there's no risk to your account and no browser extension to install.
 
 ## Install it
 
-1. In the Claude desktop app, open **Customize** in the left sidebar, then
-   the **Plugins** tab.
-2. Click **Add**, choose **Add marketplace**, and enter
-   **admentus/assistants**. (Skip this if you've added it before.)
-3. Install **LinkedIn Post Assistant**.
-4. In a Claude conversation with access to your **Claude** folder (the one
-   with your brain, if you have one), say: **Set up my post assistant.**
+1. In the Claude desktop app, start a new chat, click **+** in the message
+   box, and choose **Add plugins**.
+2. Click **Add** (top right), then **Add marketplace**, then **Add from a
+   repository**. Enter **admentus/assistants**, leave **Sync automatically**
+   on, and click **Sync**. (Skip this if you've added it before.)
+3. Click **Add** next to **LinkedIn post assistant**.
+4. Start a new chat, click **+**, choose **Add folder**, and pick your
+   **Claude** folder (the one with your brain, if you have one). Then say:
+   **Set up my post assistant.**
 
 Setup takes about ten minutes. It asks what you want to be known for, who
 you're writing for, your topics, and for a few posts you've written. Then it

@@ -17,9 +17,9 @@ there's no risk to your account. Setup takes about ten minutes."*
 ## 2. Check the folder
 
 Everything is saved in a `linkedin-posts` folder inside the folder this
-session works in. If no folder is selected, ask them to choose one first,
-ideally the same **Claude** folder that holds their Claude brain, and start
-again there. Create `linkedin-posts/` and `linkedin-posts/drafts/`.
+session works in. If this chat has no folder, ask them to add one first
+(**+** in the message box, then **Add folder**), ideally the same **Claude**
+folder that holds their Claude brain. Create `linkedin-posts/` and `linkedin-posts/drafts/`.
 
 ## 3. Read their brain first
 
