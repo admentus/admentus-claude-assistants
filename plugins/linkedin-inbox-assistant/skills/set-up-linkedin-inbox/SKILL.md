@@ -44,12 +44,26 @@ understand the risk."*
 >
 > — Jeff Chastain
 
-## 2. Check the browser
+## 2. Connect Claude in Chrome
 
-Ask the user to confirm they're signed in to LinkedIn in the browser Claude
-uses: their own Chrome if they use Claude in Chrome, otherwise Claude's
-built-in browser (they sign in there once, themselves). Never ask for their
-password and never type it.
+This assistant reads LinkedIn in the user's own Google Chrome, through the
+Claude in Chrome extension. It doesn't use any other browser. Ask the user to
+confirm three things, one at a time, and walk them through any that aren't
+done:
+
+1. **Claude in Chrome is installed and signed in.** If not: in Google Chrome,
+   open the Chrome Web Store, search for "Claude", install the extension from
+   Anthropic, pin it to the toolbar, and sign in with the same Claude account
+   they use in the app.
+2. **They're signed in to LinkedIn in that Chrome.** They sign in themselves.
+   Never ask for their password and never type it.
+3. **Cowork is set to use it.** In the Claude app's Settings, under Cowork,
+   the browser should be set to Claude in Chrome rather than the built-in
+   browser.
+
+Then open https://www.linkedin.com/messaging/ once through Claude in Chrome to
+confirm it works. If it shows a sign-in or security page, stop and ask them to
+sign in themselves. Don't move on until the inbox loads.
 
 ## 3. Learn about them
 
@@ -113,9 +127,9 @@ Tell the user how to set the schedule:
 3. For what to do, enter: **Check my LinkedIn inbox**.
 4. Set it for weekdays at the times they chose.
 
-Then explain: *"Because this uses your browser, your computer needs to be on
-and the Claude app open at those times. If it's asleep, that check is
-skipped."*
+Then explain: *"Because this uses your Chrome, your computer needs to be on,
+with Chrome and the Claude app open, at those times. If it's asleep, that
+check is skipped."*
 
 If you're able to create the scheduled task yourself in this session, offer
 to do it, confirm the name, prompt and times with the user, and then create

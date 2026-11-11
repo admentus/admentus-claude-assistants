@@ -10,7 +10,7 @@
     {
       "name": "linkedin-inbox-assistant",
       "source": "./plugins/linkedin-inbox-assistant",
-      "description": "Checks your LinkedIn messages three times a weekday, tells you who wrote and who is waiting on you, and drafts a suggested reply for each. Never sends anything. It reads LinkedIn through your browser, which LinkedIn's User Agreement prohibits, so setup shows a warning and asks you to confirm you understand the risk before it reads anything.",
+      "description": "Checks your LinkedIn messages three times a weekday, tells you who wrote and who is waiting on you, and drafts a suggested reply for each. Never sends anything. Needs Google Chrome with the Claude in Chrome extension. It reads LinkedIn by working your Chrome, which LinkedIn's User Agreement prohibits, so setup shows a warning and asks you to confirm you understand the risk before it reads anything.",
       "version": "0.1.0",
       "author": {
         "name": "Jeff Chastain, Admentus"

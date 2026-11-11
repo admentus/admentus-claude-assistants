@@ -36,10 +36,25 @@ risk. The assistant won't read LinkedIn until you have.
 ## What you need
 
 - A paid Claude plan that includes Cowork (Pro or above)
-- The Claude desktop app, on a computer that's on during your check times
-- LinkedIn signed in, in the browser Claude uses
+- The Claude desktop app, for Mac or Windows
+- Google Chrome with the **Claude in Chrome** extension. The assistant reads
+  LinkedIn in your own Chrome, so it won't work without it.
+- LinkedIn signed in, in that Chrome
+- A computer that's on, with Chrome and Claude open, during your check times
 
-## Install it
+## Set up Claude (once, if you're new to it)
+
+1. Sign up for a paid Claude plan (Pro or above) at claude.ai.
+2. Download the Claude desktop app from claude.ai/download, install it and
+   sign in.
+3. In Google Chrome, open the Chrome Web Store, search for **Claude**, and
+   install the Claude in Chrome extension from Anthropic. Pin it and sign in
+   with the same Claude account.
+4. Make sure you're signed in to LinkedIn in that Chrome.
+5. In the Claude app's Settings, under Cowork, set the browser to Claude in
+   Chrome.
+
+## Install the assistant
 
 1. In the Claude app, open **Customize**, then **Browse plugins**, then the
    **Personal** tab.

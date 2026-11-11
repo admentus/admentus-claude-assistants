@@ -30,6 +30,11 @@ sends every reply themselves.
 
 ## Hard rules
 
+- **Use the user's own Chrome, through Claude in Chrome, and nothing else.**
+  If Claude in Chrome isn't connected, don't fall back to another browser.
+  Report `LinkedIn: Chrome not connected` and say: *"Open Chrome, make sure
+  the Claude in Chrome extension is signed in, then say 'check my LinkedIn
+  inbox' again."*
 - **Never send.** Never type into a message box. Never click Send, Like, any
   reaction, Accept, Ignore, Connect, Follow, Archive, Delete, Mute, Report or
   Mark as unread. Suggested replies appear only in the report.
@@ -123,6 +128,8 @@ LinkedIn: 2 new messages, 1 waiting on you
 LinkedIn: nothing new, 1 waiting on you
 LinkedIn: nothing new
 LinkedIn: stopped, security check
+LinkedIn: Chrome not connected
+LinkedIn: not set up yet
 ```
 
 Then:

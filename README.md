@@ -16,11 +16,13 @@ something else, ask me and I'll point you the right way.
 3. Install the assistant you want, then follow its setup.
 
 You need a paid Claude plan that includes Cowork (Pro or above) and the Claude
-desktop app.
+desktop app (claude.ai/download). The LinkedIn assistants also need Google
+Chrome with the Claude in Chrome extension, signed in to LinkedIn, because
+they read LinkedIn in your own Chrome.
 
 ## The assistants
 
-- **LinkedIn Inbox Assistant** (`linkedin-inbox-assistant`). Checks your LinkedIn messages three times a weekday, tells you who wrote and who is waiting on you, and drafts a suggested reply for each. Never sends anything. It reads LinkedIn through your browser, which LinkedIn's User Agreement prohibits, so setup shows a warning and asks you to confirm you understand the risk before it reads anything.
+- **LinkedIn Inbox Assistant** (`linkedin-inbox-assistant`). Checks your LinkedIn messages three times a weekday, tells you who wrote and who is waiting on you, and drafts a suggested reply for each. Never sends anything. Needs Google Chrome with the Claude in Chrome extension. It reads LinkedIn by working your Chrome, which LinkedIn's User Agreement prohibits, so setup shows a warning and asks you to confirm you understand the risk before it reads anything.
 
 ## ⚠️ The LinkedIn assistants
 
