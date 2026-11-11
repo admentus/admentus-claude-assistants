@@ -1,0 +1,27 @@
+{
+  "name": "admentus-assistants",
+  "owner": {
+    "name": "Jeff Chastain, Admentus"
+  },
+  "metadata": {
+    "description": "Small Claude Cowork assistants from Admentus. Each does one job and drafts for you; none sends anything."
+  },
+  "plugins": [
+    {
+      "name": "linkedin-inbox-assistant",
+      "source": "./plugins/linkedin-inbox-assistant",
+      "description": "Checks your LinkedIn messages three times a weekday, tells you who wrote and who is waiting on you, and drafts a suggested reply for each. Never sends anything. It reads LinkedIn through your browser, which LinkedIn's User Agreement prohibits, so setup shows a warning and asks you to confirm you understand the risk before it reads anything.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Jeff Chastain, Admentus"
+      },
+      "keywords": [
+        "linkedin",
+        "inbox",
+        "messages",
+        "replies",
+        "drafts"
+      ]
+    }
+  ]
+}
