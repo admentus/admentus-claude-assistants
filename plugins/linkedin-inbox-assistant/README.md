@@ -1,6 +1,6 @@
 # LinkedIn Inbox Assistant
 
-*Version 0.1.3 · November 2026 · from Jeff Chastain, Admentus*
+*Version 0.1.4 · November 2026 · from Jeff Chastain, Admentus*
 
 Three times each weekday it checks your LinkedIn messages and tells you who
 wrote. For each new message, it drafts a reply you can copy, edit and send
@@ -70,9 +70,10 @@ risk. The assistant won't read LinkedIn until you have.
 If I sent you a `.plugin` file instead, choose **Upload plugin** instead of
 **Add marketplace** in step 2, and skip step 3.
 
-Setup takes about ten minutes. It asks how you write and what you want from
-LinkedIn conversations, helps you schedule the checks, and runs the first one
-with you.
+Setup takes about ten minutes. It asks what you want from LinkedIn
+conversations (and how you write, if you haven't set up Claude Brain), saves
+your settings in your project so the check works from any computer, helps you
+schedule the checks, and runs the first one with you.
 
 ## What it tells you
 
@@ -96,7 +97,9 @@ Nothing was sent.
 
 - **Check my LinkedIn inbox** for an extra check any time
 - **Draft a LinkedIn reply to <name>** for one reply
-- **Set up my LinkedIn inbox assistant** to change how replies sound
+- **Set up my LinkedIn inbox assistant** to change your settings
+- **Move my LinkedIn settings into my project** if you set it up with an
+  earlier version
 
 ## What it never does
 

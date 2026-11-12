@@ -12,24 +12,30 @@ sends every reply themselves.
 
 ## Before opening the browser
 
-1. Read `references/about-me.md` in this skill's folder. If it still has lines
-   starting with `~~`, look for `linkedin-assistant-about-me.md` in the working
-   folder instead.
-   - **If neither file shows a filled-in "Risk acknowledged" line, stop here.**
-     Don't open LinkedIn. Report `LinkedIn: not set up yet` and say: *"Before
-     I read your LinkedIn messages, you need to see the warning about the risk
-     to your account. Say 'set up my LinkedIn inbox assistant' to start."*
-   - If the risk is acknowledged but other details are missing, run anyway,
-     draft in a short, plain, warm style, and end the report with: *"Say 'set
-     up my LinkedIn inbox assistant' so replies sound like you."*
+1. **Find the settings.** Read `linkedin-inbox-settings.md` in the project's
+   Context. If it isn't there, look in the working folder for
+   `linkedin-inbox-settings.md` or, from an older setup,
+   `linkedin-assistant-about-me.md`. Never look inside this plugin's own
+   folder for settings: an update replaces it.
+   - **If no settings file has a "Risk acknowledged" line with a date, stop
+     here.** Don't open LinkedIn. Report `LinkedIn: not set up yet` and say:
+     *"Before I read your LinkedIn messages, you need to see the warning
+     about the risk to your account. Say 'set up my LinkedIn inbox
+     assistant' to start."*
+   - **Found only the older `linkedin-assistant-about-me.md`, in a project
+     chat:** run anyway, and end the report with one line: *"Say 'move my
+     LinkedIn settings into my project' so this works from any computer."*
    - **If the user has a Claude brain** (`CLAUDE.md` and `my-*.md` files in
      the project's Context, or, from an older setup, `CLAUDE.md` with a
      `knowledge/` folder in the working folder), also read `CLAUDE.md` and
      `my-voice.md`, check `my-people.md` for anyone who wrote, and check the
-     project's memory, which wins where it's newer. For voice, people and
-     how to work with the user, the brain wins over about-me, because it's
-     what they keep up to date. The risk acknowledgment and check times
-     still come from about-me.
+     project's memory, which wins where it's newer. The brain is the source
+     for their name, work, voice and people. The settings are the source for
+     the risk acknowledgment, check times, next step, booking link, Sales
+     Navigator, people to flag first and the "LinkedIn replies never" rules.
+   - **No brain, and no "About me" in the settings:** run anyway, draft in a
+     short, plain, warm style, and end the report with: *"Say 'set up my
+     Claude brain' so replies sound like you."*
 2. Read `references/reading-linkedin.md`. It holds the rules that keep the
    account safe and the read accurate. Follow all of them.
 3. **Demo mode.** If the user said "demo mode", the report is being shown to a
@@ -79,14 +85,14 @@ unclear), and whether it shows as unread.
 Switch tabs using the tab menu in the page, found by its label. Read it the
 same way.
 
-### 4. Sales Navigator, only if about-me says the user has it
+### 4. Sales Navigator, only if the settings say the user has it
 
 Open `https://www.linkedin.com/sales/inbox` once and read its list the same
 way, down to about 7 days.
 
 ### 5. Sort what you read
 
-Work out the **previous check time** from the check times in about-me (default:
+Work out the **previous check time** from the check times in the settings (default:
 8 AM, 12 PM and 4 PM on weekdays). The previous check is the latest one before
 now. On the first check of a day it was the last check of the previous weekday.
 
@@ -111,8 +117,10 @@ they said and what they're asking. Don't scroll further back than that.
 
 - Answer what they actually said or asked, first.
 - Keep it short: two to four sentences, the way a person writes on LinkedIn.
-- Match the samples under "How I write" in about-me, and obey its "Never" list.
-- Move toward the good next step in about-me only when the conversation is
+- Match how they write: `my-voice.md` in their brain, or "How I write" in
+  the settings if they have no brain. Obey the brain's never lines and the
+  settings' "LinkedIn replies never".
+- Move toward the good next step in the settings only when the conversation is
   ready for it. Offer the booking link only when they've shown they want to
   talk.
 - Never invent a fact, a date, availability, a price or a promise. Where the
