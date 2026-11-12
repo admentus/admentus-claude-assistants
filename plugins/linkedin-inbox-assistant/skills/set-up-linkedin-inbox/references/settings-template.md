@@ -9,6 +9,8 @@ Rules:
 - Replace everything in `<angle brackets>`. Write "none" for anything skipped.
 - **Risk acknowledged** carries the date and the user's own words, exactly. It
   is the consent record: the check won't open LinkedIn without it.
+- **Browser** is the one Chrome the check uses, by the ID Claude in Chrome
+  gave it. Setup fills it in; "pick my LinkedIn browser" changes it.
 - **With a Claude brain, leave out the last section.** The brain already has
   the user's name, work and writing, and it's what they keep up to date.
 - No client account numbers, passwords, health details or confidential deal
@@ -21,6 +23,7 @@ The LinkedIn inbox assistant reads this on every run. Say "set up my LinkedIn
 inbox assistant" to change it.
 
 - **Risk acknowledged:** <date>, "<the words they used>"
+- **Browser:** <its name, for example Chrome, office laptop>, ID <the ID from Claude in Chrome>
 - **Check times:** <weekdays at 8 AM, 12 PM and 4 PM, or their times>
 - **A good next step in a LinkedIn conversation:** <answer>
 - **My booking link (offer it only when they want to talk):** <link or none>

@@ -1,6 +1,6 @@
 ---
 name: set-up-linkedin-inbox
-description: Sets up the LinkedIn inbox assistant. Explains the risk to the user's LinkedIn account, learns what the user wants from LinkedIn conversations, saves the settings in their Claude project, schedules the checks, and runs the first check together. Use when the user says "set up my LinkedIn inbox assistant", "set up the LinkedIn inbox", "configure the LinkedIn assistant", "change how my LinkedIn replies sound", "move my LinkedIn settings into my project", or right after the plugin is installed.
+description: Sets up the LinkedIn inbox assistant. Explains the risk to the user's LinkedIn account, learns what the user wants from LinkedIn conversations, saves the settings in their Claude project, schedules the checks, and runs the first check together. Use when the user says "set up my LinkedIn inbox assistant", "set up the LinkedIn inbox", "configure the LinkedIn assistant", "change how my LinkedIn replies sound", "move my LinkedIn settings into my project", "pick my LinkedIn browser", or right after the plugin is installed.
 ---
 
 # Set up the LinkedIn inbox assistant
@@ -10,7 +10,8 @@ question at a time and wait for the answer. Don't mention files, folders,
 placeholders or code unless a step needs the user to click something.
 
 If the user said "move my LinkedIn settings into my project", go to **Moving
-older settings into the project** at the end instead.
+older settings into the project** at the end instead. If they said "pick my
+LinkedIn browser", go to **Picking the browser** at the end.
 
 ## 1. The warning comes first, and the user acknowledges it
 
@@ -67,12 +68,12 @@ Claude project's page?"*
   project, carry on and save the settings in the chat's folder in step 5. With
   no folder either, a project is the only place the settings can be kept.
 
-## 3. Connect Claude in Chrome
+## 3. Connect Claude in Chrome and pick the browser
 
 This assistant reads LinkedIn in the user's own Google Chrome, through the
-Claude in Chrome extension. It doesn't use any other browser. Ask the user to
-confirm three things, one at a time, and walk them through any that aren't
-done:
+Claude in Chrome extension. It uses one browser, picked here, and no other.
+Ask the user to confirm three things, one at a time, and walk them through
+any that aren't done:
 
 1. **Claude in Chrome is installed and signed in.** If not: in Google Chrome,
    open the Chrome Web Store, search for "Claude", install the extension from
@@ -83,9 +84,35 @@ done:
 3. **Claude is allowed to use it.** In the Claude app, Settings, then
    Capabilities: Claude in Chrome is turned on.
 
-Then open https://www.linkedin.com/messaging/ once through Claude in Chrome to
-confirm it works. If it shows a sign-in or security page, stop and ask them to
-sign in themselves. Don't move on until the inbox loads.
+**Then pick the browser.** People often have Claude in Chrome in more than
+one browser, or on more than one computer. A scheduled check runs with nobody
+watching, so it has to know exactly which browser to use. Without that, it
+sends a Connect button to every browser, waits for a click that never comes,
+and fails.
+
+1. Get the list of connected browsers from Claude in Chrome
+   (`list_connected_browsers`). Each has an ID, a name and its computer's
+   system.
+2. **One browser:** that's the one. Select it by its ID (`select_browser`).
+3. **More than one:** show the list in plain words (the name, Mac or
+   Windows, and whether it's on this computer) and ask which is the Google
+   Chrome they're signed in to LinkedIn on. Suggest the Chrome on the computer
+   that's most often on and open at their check times. Select it by its ID.
+   If the names don't tell them apart, say: *"I'll send a Connect button to
+   each of your browsers. Click Connect in the Chrome you use for LinkedIn,
+   and name it something like 'Chrome, office laptop'."* Send the Connect
+   request (`switch_browser`), wait for the click, then get the list again
+   and take the browser now in use.
+4. **None:** Claude in Chrome isn't connected. Go back over the three checks
+   above.
+5. Note the browser's name and ID. Both are saved in step 5.
+
+Sending a Connect request to every browser happens only here, with the user
+watching. The inbox check never does it.
+
+Then open https://www.linkedin.com/messaging/ once in that browser to confirm
+it works. If it shows a sign-in or security page, stop and ask them to sign in
+themselves. Don't move on until the inbox loads.
 
 ## 4. Learn what they want
 
@@ -123,7 +150,8 @@ anything optional.
 
 Write `linkedin-inbox-settings.md` from `references/settings-template.md` in
 this skill's folder. Put the date and words from step 1 in "Risk
-acknowledged". With a Claude brain, leave out the "About me" section.
+acknowledged" and the browser from step 3 in "Browser". With a Claude brain,
+leave out the "About me" section.
 
 Then put it in the project's Context:
 
@@ -161,11 +189,12 @@ Tell the user how to set the schedule:
 3. For what to do, enter: **Check my LinkedIn inbox**.
 4. Set it for weekdays at the times they chose.
 
-Then explain: *"Because this uses your Chrome, your computer needs to be on,
-with Chrome and the Claude app open, at those times. If it's asleep, that
-check is skipped. If you use Claude on more than one computer, look at the
-check's run history under Scheduled after a day: it should run on one
-computer only, the one where Chrome is signed in to LinkedIn."*
+Then explain: *"Because this uses your Chrome, the Chrome you picked needs to
+be open, on a computer that's awake, with the Claude app open, at those
+times. If that Chrome isn't connected, the check stops and tells you instead
+of guessing. If you use Claude on more than one computer, look at the check's
+run history under Scheduled after a day: there should be one run for each
+check time."*
 
 If you're able to create the scheduled task yourself in this session, offer
 to do it, confirm the name, prompt and times with the user, and then create
@@ -198,12 +227,30 @@ no `linkedin-inbox-settings.md`:
 
 1. Read the old file. If its "Risk acknowledged" line has no date and words,
    this isn't a move: run setup from step 1.
-2. Write `linkedin-inbox-settings.md` from the template, carrying "Risk
-   acknowledged" over exactly as recorded. With a Claude brain, leave out
-   the "About me" section and tell the user their name, work and writing now
-   come from the brain.
-3. Show it, then add it to the project's Context as in step 5.
-4. Once it's in Context, ask, then rename the old file to
+2. Pick the browser as in step 3. The older file has none.
+3. Write `linkedin-inbox-settings.md` from the template, carrying "Risk
+   acknowledged" over exactly as recorded and adding the browser. With a
+   Claude brain, leave out the "About me" section and tell the user their
+   name, work and writing now come from the brain.
+4. Show it, then add it to the project's Context as in step 5.
+5. Once it's in Context, ask, then rename the old file to
    `linkedin-assistant-about-me-old-<date>.md`. Never delete it.
-5. Tell them the check now finds its settings on any computer in the
+6. Tell them the check now finds its settings on any computer in the
    project.
+
+## Picking the browser
+
+For "pick my LinkedIn browser", or after the check reported `LinkedIn:
+browser not picked`, or `LinkedIn: Chrome not connected` following a new
+computer or a reinstalled extension:
+
+1. Find the settings: the project's Context first, then the chat's folder.
+   If no settings file has a "Risk acknowledged" line with a date and words,
+   this isn't a browser change: run setup from step 1.
+2. Pick the browser as in step 3, including opening the inbox once to
+   confirm.
+3. Put its name and ID in the settings' "Browser" line and save them as in
+   step 5: replace the copy in Context if you can, or add the new one and
+   tell the user exactly which old file to remove.
+4. Tell them every check now uses that browser, and that they can say "pick
+   my LinkedIn browser" again any time.

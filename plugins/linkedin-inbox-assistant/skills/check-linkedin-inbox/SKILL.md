@@ -36,19 +36,39 @@ sends every reply themselves.
    - **No brain, and no "About me" in the settings:** run anyway, draft in a
      short, plain, warm style, and end the report with: *"Say 'set up my
      Claude brain' so replies sound like you."*
-2. Read `references/reading-linkedin.md`. It holds the rules that keep the
+2. **Select the browser, before any page.** Get the list of connected
+   browsers from Claude in Chrome (`list_connected_browsers`).
+   - **The settings' "Browser" ID is in the list:** select it by that ID
+     (`select_browser`) and carry on.
+   - **The settings name a browser that isn't in the list:** stop. Don't
+     open LinkedIn. Report `LinkedIn: Chrome not connected` and say: *"The
+     Chrome I use for LinkedIn (<its name>) isn't connected right now. Open
+     it and check that Claude in Chrome is signed in, then say 'check my
+     LinkedIn inbox'. If you reinstalled the extension or changed computers,
+     say 'pick my LinkedIn browser'."*
+   - **No browser in the settings (an older setup), and exactly one
+     connected:** select it, and end the report with: *"Say 'pick my LinkedIn
+     browser' so I always use the right one."*
+   - **No browser in the settings, and more than one connected:** stop.
+     Report `LinkedIn: browser not picked` and say: *"You have Claude in
+     Chrome in more than one browser, and I don't know which one you use for
+     LinkedIn. Say 'pick my LinkedIn browser' and I'll set it."*
+   - **Nothing connected:** stop and report `LinkedIn: Chrome not connected`
+     with the message above.
+3. Read `references/reading-linkedin.md`. It holds the rules that keep the
    account safe and the read accurate. Follow all of them.
-3. **Demo mode.** If the user said "demo mode", the report is being shown to a
+4. **Demo mode.** If the user said "demo mode", the report is being shown to a
    room. Show first names only, leave out companies and titles, and summarize
    what people said instead of quoting them. Everything else is the same.
 
 ## Hard rules
 
-- **Use the user's own Chrome, through Claude in Chrome, and nothing else.**
-  If Claude in Chrome isn't connected, don't fall back to another browser.
-  Report `LinkedIn: Chrome not connected` and say: *"Open Chrome, make sure
-  the Claude in Chrome extension is signed in, then say 'check my LinkedIn
-  inbox' again."*
+- **Use only the browser named in the settings, through Claude in Chrome.**
+  Never fall back to another browser. Never send a Connect request to every
+  browser (`switch_browser`): on a scheduled run nobody is there to click
+  it, the run fails after two minutes, and the button pops up in every
+  browser the user has. Picking a browser is setup's job ("pick my LinkedIn
+  browser"), with the user watching.
 - **Never send.** Never type into a message box. Never click Send, Like, any
   reaction, Accept, Ignore, Connect, Follow, Archive, Delete, Mute, Report or
   Mark as unread. Suggested replies appear only in the report.
@@ -145,6 +165,7 @@ LinkedIn: nothing new, 1 waiting on you
 LinkedIn: nothing new
 LinkedIn: stopped, security check
 LinkedIn: Chrome not connected
+LinkedIn: browser not picked
 LinkedIn: not set up yet
 ```
 
@@ -196,7 +217,8 @@ What to do:
 
 ## When the user asks for one reply
 
-For "draft a LinkedIn reply to" followed by a name: open
+For "draft a LinkedIn reply to" followed by a name: find the settings and
+select the browser as above, then open
 `https://www.linkedin.com/messaging/?searchTerm=<First+Last>`, wait for the
 results to settle, and open the matching conversation. If more than one person
 matches, list them and ask which one. If none match, try the last name alone
