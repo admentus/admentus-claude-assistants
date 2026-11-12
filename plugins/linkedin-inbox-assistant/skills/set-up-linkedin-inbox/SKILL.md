@@ -129,9 +129,11 @@ indicators."* The user changes this setting themselves. Don't do it for them.
 
 Tell the user how to set the schedule:
 
-1. Open **Scheduled** in the Claude app's left sidebar and add a task. If
-   it asks which folder to work in, pick their **Claude** folder so the
-   check can read their brain.
+1. If they have a Claude project (where their brain lives), add it there so
+   the check can read their brain: on the project's page (**Projects** in
+   the left sidebar, then their project), click **Add** next to
+   **Scheduled**. Without a project, open **Scheduled** in the left sidebar
+   and add a task there.
 2. Name it **LinkedIn inbox check**.
 3. For what to do, enter: **Check my LinkedIn inbox**.
 4. Set it for weekdays at the times they chose.

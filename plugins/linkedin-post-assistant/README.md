@@ -1,6 +1,6 @@
 # LinkedIn Post Assistant
 
-*Version 0.1.0 · November 2026 · from Jeff Chastain, Admentus*
+*Version 0.1.1 · November 2026 · from Jeff Chastain, Admentus*
 
 You know what to say. Writing it takes the time you don't have. Give this
 assistant ten minutes of notes a week, typed or as a voice-memo transcript,
@@ -26,9 +26,10 @@ so there's no risk to your account and no browser extension to install.
    repository**. Enter **admentus/admentus-claude-assistants**, leave **Sync automatically**
    on, and click **Sync**. (Skip this if you've added it before.)
 3. Click **Add** next to **LinkedIn Post Assistant**.
-4. Start a new chat, click **+**, choose **Add folder**, and pick your
-   **Claude** folder (the one with your brain, if you have one). Then say:
-   **Set up my post assistant.**
+4. Open your Claude project (**Projects** in the left sidebar) and start a
+   chat there. No project yet? Click **+** next to Projects, choose **Start
+   from scratch**, name it **My Work** and save its folder in Documents. Then
+   say: **Set up my post assistant.**
 
 Setup takes about ten minutes. It asks what you want to be known for, who
 you're writing for, your topics, and for a few posts you've written. Then it
@@ -50,7 +51,7 @@ client. Name a client unless you say you have permission.
 
 ## Where things are saved
 
-In a `linkedin-posts` folder inside your working folder: your post profile,
+In a `linkedin-posts` folder inside your project's folder: your post profile,
 your ideas bank, every draft, and a log of what you've posted. Plain files you
 can open and edit.
 

@@ -68,6 +68,35 @@ anything.*
 
 ---
 
+## project-instructions.md (in the folder's top level)
+
+The short version that goes in the project's instructions. It says the same
+things as `CLAUDE.md`, shorter. Under 200 words. No client names, no people,
+nothing private: it's stored in the user's Claude account and shows on every
+device where they open the project.
+
+```markdown
+I'm <name>, <role> at <firm>. <One sentence: what I do and who for.>
+
+Right now I'm focused on <one line from question 8>.
+
+How to work with me:
+- <two or three lines from "How to work with me" in CLAUDE.md>
+
+How I write:
+- <three short rules from "How I write" in CLAUDE.md>
+- Never: <the never lines about writing>
+
+My full Claude brain is in this project's folder: CLAUDE.md and a knowledge
+folder (my business, my people, my voice, my week, my tools). When the folder
+is available, read CLAUDE.md before any work about my business, my clients,
+my week or anything written in my voice, then the knowledge files it points
+to. When it isn't (on my phone or the web), work from these instructions and
+tell me if a task needs something from my files.
+```
+
+---
+
 ## knowledge/my-business.md
 
 ```markdown

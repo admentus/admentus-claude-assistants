@@ -16,10 +16,16 @@ there's no risk to your account. Setup takes about ten minutes."*
 
 ## 2. Check the folder
 
-Everything is saved in a `linkedin-posts` folder inside the folder this
-session works in. If this chat has no folder, ask them to add one first
-(**+** in the message box, then **Add folder**), ideally the same **Claude**
-folder that holds their Claude brain. Create `linkedin-posts/` and `linkedin-posts/drafts/`.
+Everything is saved in a `linkedin-posts` folder inside the folder this chat
+works in: ideally their Claude project's folder, next to their brain. If this
+chat has no folder, ask them to start it from their project's page
+(**Projects** in the left sidebar, then their project) and say "Set up my
+post assistant" there. No project yet: **Projects**, then **+**, then **Start
+from scratch**, named **My Work** with its folder in Documents. On the
+project's page, **Context** should list the folder; if it doesn't, they click
+**Add** next to it and pick it.
+
+Create `linkedin-posts/` and `linkedin-posts/drafts/`.
 
 ## 3. Read their brain first
 
@@ -89,9 +95,10 @@ I'll turn them into drafts. During the week, say 'save a post idea' whenever
 something comes up."*
 
 Offer a weekly scheduled task: *"Draft this week's LinkedIn posts from my
-ideas,"* Mondays at 8 AM. If they want it, tell them how (open Scheduled in the Claude app's left sidebar,
-and pick their Claude folder when it asks which folder to work in), or create it yourself if you can,
-after confirming the time. It needs their computer on with the Claude app open.
+ideas,"* Mondays at 8 AM. If they want it, tell them how (on their project's page, click **Add** next
+to **Scheduled**, so it runs with the project's folder), or create it
+yourself if you can, after confirming the time. It needs their computer on
+with the Claude app open.
 
 ## 8. Draft the first one together
 

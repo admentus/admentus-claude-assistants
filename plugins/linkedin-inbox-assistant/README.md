@@ -1,6 +1,6 @@
 # LinkedIn Inbox Assistant
 
-*Version 0.1.0 · November 2026 · from Jeff Chastain, Admentus*
+*Version 0.1.2 · November 2026 · from Jeff Chastain, Admentus*
 
 Three times each weekday it checks your LinkedIn messages and tells you who
 wrote. For each new message, it drafts a reply you can copy, edit and send
@@ -63,9 +63,9 @@ risk. The assistant won't read LinkedIn until you have.
    on, and click **Sync**. (You only do this once. It adds all of my
    assistants.)
 3. Click **Add** next to **LinkedIn Inbox Assistant**.
-4. Start a new chat. If you have a Claude brain, click **+**, choose **Add
-   folder** and pick your **Claude** folder. Then say: **Set up my LinkedIn
-   inbox assistant.**
+4. If you set up Claude Brain, open its project (**Projects** in the left
+   sidebar) and start a chat there. Otherwise, start a new chat. Then say:
+   **Set up my LinkedIn inbox assistant.**
 
 If I sent you a `.plugin` file instead, choose **Upload plugin** instead of
 **Add marketplace** in step 2, and skip step 3.
