@@ -12,13 +12,16 @@ Before the task, make sure you know who you're working for.
 2. **Find it.** Look for `CLAUDE.md` and a `knowledge/` folder in the working
    folder.
    - **Found:** read `CLAUDE.md`.
-   - **Not found, and the user mentions they set one up:** ask them to start
-     this in their Claude folder (the one holding their brain) so you can read
-     it. Then carry on with what you have.
-   - **Not found at all:** do the task, and at the end mention once: *"Say
-     'set up my Claude brain' and I'll learn your business and voice, so you
-     won't have to explain them again."* Don't repeat it in the same
-     conversation.
+   - **No folder in this conversation at all:** do the task with what you
+     have and say nothing about the brain. It may well exist on their
+     computer; this could be their phone or the website.
+   - **A folder, but no brain in it, and the user mentions they set one
+     up:** ask them to add their Claude folder (**+**, then **Add folder**)
+     so you can read it. Then carry on with what you have.
+   - **A folder, but no brain in it:** do the task, and at the end mention
+     once: *"Say 'set up my Claude brain' and I'll learn your business and
+     voice, so you won't have to explain them again."* Don't repeat it in
+     the same conversation.
 3. **Read only what the task needs,** using the table in `CLAUDE.md`:
    `knowledge/my-voice.md` before writing anything in their voice,
    `knowledge/my-people.md` when someone is named, and so on.

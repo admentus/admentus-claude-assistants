@@ -87,30 +87,26 @@ manufacturers with 20 to 200 people find...", "Replies should be short and
 skip the pleasantries"), and ask: *"Anything I got wrong?"* Fix what they
 correct, in the files.
 
-## 6. Make it load everywhere
-
-Explain: *"Claude reads your brain whenever it works with this folder. To
-point every conversation at it, add one line to your Claude settings."*
-
-Give them this to copy, with their actual folder path filled in:
-
-> My Claude brain is in my <folder path> folder. When a task is about my
-> business, my clients, my week or anything written in my voice, read its
-> CLAUDE.md and the knowledge files it points to first.
-
-Tell them where it goes: the Claude app's Settings, then **Your Claude**, in
-**Instructions for Claude**. Suggest they keep a copy of that line somewhere,
-because that setting has been known to lose recent edits. Their brain is
-safe either way: it lives in the files.
-
-## 7. Finish
+## 6. Finish
 
 Tell them what they can say from now on:
 
 - **"Update my brain"** or **"Remember that..."** to change or add something
 - **"What do you know about me?"** to review it
-- Add their **Claude** folder to each new chat (**+**, then **Add folder**),
-  and pick it for scheduled tasks, so every session starts out knowing them
+
+And how to use it:
+
+- **Add the Claude folder to each new chat** (**+**, then **Add folder**),
+  and pick it for scheduled tasks. That's what makes a chat start out
+  knowing them. A chat without the folder, including Claude on their phone
+  or the website, doesn't have the brain.
+- **Using a second computer?** Keep the Claude folder in OneDrive, Dropbox,
+  iCloud Drive or Google Drive, and add it the same way there.
 
 And: *"Any of my other assistants you install will read this first, so their
 setup will be shorter."*
+
+Don't suggest putting a pointer to the brain in Claude's settings
+(**Instructions for Claude**). Those settings follow the user to every
+device, and the folder doesn't, so the pointer would send Claude looking for
+files it can't reach.
