@@ -1,10 +1,10 @@
 # Claude Brain
 
-*Version 0.2.0 · November 2026 · from Jeff Chastain, Admentus*
+*Version 0.3.0 · November 2026 · from Jeff Chastain, Admentus*
 
 A 20-minute interview that teaches Claude your practice, your clients and your
-voice. It writes what it learns into a few plain files in a Claude project on
-your computer. Every chat you start in the project reads them, so you stop
+voice. It saves what it learns into a Claude project, so every chat you start
+there knows you: on your computer, your phone and the website. You stop
 explaining yourself, and every other assistant you install starts out knowing
 you.
 
@@ -14,7 +14,8 @@ reads, and a set of knowledge files it reads when a task needs them.
 ## What you need
 
 - A paid Claude plan (Pro or above)
-- The Claude desktop app, for Mac or Windows (claude.ai/download)
+- The Claude desktop app, for Mac or Windows (claude.ai/download), for setup.
+  After that the brain works anywhere you use Claude.
 
 ## Install it
 
@@ -26,14 +27,11 @@ reads, and a set of knowledge files it reads when a task needs them.
    before.)
 3. Click **Add** next to **Claude Brain**.
 4. Make a project: click **Projects** in the left sidebar, then **+**, then
-   **Start from scratch**. Name it **My Work** (or your business name) and
-   save its folder in Documents. Use more than one computer? Save it in
-   OneDrive, Dropbox, iCloud Drive or Google Drive instead.
-5. On the project's page, check that **Context** lists the folder. If it
-   doesn't, click **Add** next to it and pick the folder.
-6. Start a chat from the project's page and say: **Set up my Claude brain.**
-7. At the end, paste the short paragraph it gives you into the project's
-   **Instructions**.
+   **Start from scratch**. Name it **My Work** (or your business name).
+5. Start a chat from the project's page and say: **Set up my Claude brain.**
+6. At the end it adds your brain to the project and gives you a short
+   paragraph for the project's **Instructions**. If it can't add them itself,
+   it shows you where to click.
 
 ## What it asks
 
@@ -46,48 +44,33 @@ Claude brain" later.
 Give it your website address first and it fills in what it can, so it only
 asks what's missing.
 
-## What it writes
+## What it saves in your project
 
-```
-My Work/
-├── CLAUDE.md                the short version Claude always reads
-├── project-instructions.md  the shorter version for the project's instructions
-└── knowledge/
-    ├── my-business.md       what you sell, who you serve, how clients find you
-    ├── my-people.md         key clients and partners, first names only
-    ├── my-voice.md          how you write, with your own samples
-    ├── my-week.md           where your time goes
-    ├── my-tools.md          email, calendar, CRM, files
-    └── interview-notes.md   your answers as you gave them
-```
+| Where | What |
+|---|---|
+| **Context** | `CLAUDE.md`, the short version Claude always reads, and `my-business.md`, `my-people.md`, `my-voice.md`, `my-week.md`, `my-tools.md` and your interview notes |
+| **Instructions** | A short paragraph: who you are, how you write, and "read my brain first" |
+| **Memory** | Whatever you tell it afterwards with "remember that..." |
 
-They're plain text. Open them, read them, change them.
-
-## Your phone and other computers
-
-The project follows you to your phone, the website and your other computers.
-The folder stays on the computer it's on. So:
-
-- **On your phone or the website,** chats in the project know the basics from
-  the project's instructions, but can't open your files.
-- **On a second computer,** keep the folder in a synced drive. Open the
-  project there, click **Add** next to **Context**, and pick the folder.
+You can open any of them from the project's page.
 
 ## Things to say
 
-- **Update my brain** or **Remember that...** to change or add something
+- **Remember that...** to add a fact or a preference (it goes in memory)
+- **Update my brain** for a bigger change, like a new service
 - **What do you know about me?** to review it
+- **Refresh my brain** to fold what memory has learned into the brain files
 - **Continue my Claude brain** to finish an interview you stopped
-- **Move my brain into a project** if you set it up before it used projects
+- **Move my brain into my project** if you set it up in a folder with an
+  earlier version
 
 Start every chat from your project. A chat outside it doesn't know you.
 
 ## Keep it clean
 
-These files sit on your computer, and Claude reads them while it works with
-you. Leave out client account numbers, health details, passwords and
-confidential deal terms. First names and a line of context are plenty. The
-project's instructions are stored in your Claude account, so they hold only
-the basics and no client names. If you work under compliance rules (financial
-services, healthcare, law), keep client details out entirely and check your
-firm's policy on AI tools first.
+Your brain is stored in your Claude account, like your chats, and Claude
+reads it while it works with you. Leave out client account numbers, health
+details, passwords and confidential deal terms. First names and a line of
+context are plenty. If you work under compliance rules (financial services,
+healthcare, law), keep client details out entirely and check your firm's
+policy on AI tools first.

@@ -14,9 +14,9 @@ edit and post it themselves. Never open LinkedIn.
   reader, goal, format rules, samples and "never" list. If it's missing,
   draft with plain defaults and end with: *"Say 'set up my post assistant'
   so posts sound more like you."*
-- Their Claude brain, if the folder has one (`CLAUDE.md` with a `knowledge/`
-  folder): read `CLAUDE.md`, `knowledge/my-voice.md` and
-  `knowledge/my-business.md`.
+- Their Claude brain, if they have one (`CLAUDE.md` and `my-*.md` files in the project's Context, or, from an older setup, `CLAUDE.md` with a `knowledge/` folder in the working folder): read `CLAUDE.md`,
+  `my-voice.md` and `my-business.md`, and check the project's memory, which
+  wins where it's newer.
 - `references/writing-posts.md` in this skill's folder. Follow it.
 
 ## 2. Work out the input
@@ -71,7 +71,7 @@ Leave out "Check before posting" if there's nothing to check.
   revise, show the new version, and update the saved file.
 - **The user rewrites a phrase their own way twice** in one conversation:
   ask once, *"Want me to remember that for next time?"* If yes, add it to
-  their post profile, or to `knowledge/my-voice.md` if they have a brain.
+  their post profile, or to the project's memory if they have a brain.
 - **"I posted it":** set the file's status to `posted <date>` and add a line
   to `linkedin-posts/posted.md` (date, topic, opening line), creating the
   file if needed. That log keeps later ideas from repeating.

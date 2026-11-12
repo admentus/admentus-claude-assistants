@@ -66,13 +66,14 @@ sign in themselves. Don't move on until the inbox loads.
 
 ## 3. Learn about them
 
-**If the user has a Claude brain** (a `CLAUDE.md` and a `knowledge/` folder in
-the working folder), read `CLAUDE.md`, `knowledge/my-business.md`,
-`knowledge/my-people.md` and `knowledge/my-voice.md` first. Fill in every
-answer below that they already cover, show the user what you took in one short
-message, and ask only the questions left. In step 4, copy what you used into
-this assistant's own file too, because a scheduled check may not be able to
-read the folder.
+**If the user has a Claude brain** (`CLAUDE.md` and `my-*.md` files in the
+project's Context, or, from an older setup, `CLAUDE.md` with a `knowledge/`
+folder in the working folder), read `CLAUDE.md`, `my-business.md`,
+`my-people.md` and `my-voice.md` first, and check the project's memory. Fill
+in every answer below that they already cover, show the user what you took in
+one short message, and ask only the questions left. In step 4, copy what you
+used into this assistant's own file too, so a check run outside the project
+still sounds like them.
 
 Ask these one at a time. Offer the example when it helps. Accept "skip" for
 anything optional.

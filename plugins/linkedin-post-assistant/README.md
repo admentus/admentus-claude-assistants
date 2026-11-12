@@ -1,6 +1,6 @@
 # LinkedIn Post Assistant
 
-*Version 0.1.1 · November 2026 · from Jeff Chastain, Admentus*
+*Version 0.1.2 · November 2026 · from Jeff Chastain, Admentus*
 
 You know what to say. Writing it takes the time you don't have. Give this
 assistant ten minutes of notes a week, typed or as a voice-memo transcript,

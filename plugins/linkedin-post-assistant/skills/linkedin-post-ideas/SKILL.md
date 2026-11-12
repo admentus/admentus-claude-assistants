@@ -30,8 +30,8 @@ When they ask what to post:
 
 1. Read `linkedin-posts/post-profile.md` (topics, reader, cadence),
    `linkedin-posts/ideas.md`, and `linkedin-posts/posted.md` if it exists.
-   If they have a Claude brain, read `knowledge/my-business.md` and
-   `knowledge/my-week.md` too.
+   If they have a Claude brain, read `my-business.md` and `my-week.md` too,
+   and check the project's memory.
 2. Propose as many posts as their weekly cadence (default two), each with a
    working title and one line of angle. Spread them across their topics, and
    skip anything too close to a recent line in `posted.md`.

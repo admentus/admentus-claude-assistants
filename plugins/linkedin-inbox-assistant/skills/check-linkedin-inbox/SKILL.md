@@ -22,12 +22,14 @@ sends every reply themselves.
    - If the risk is acknowledged but other details are missing, run anyway,
      draft in a short, plain, warm style, and end the report with: *"Say 'set
      up my LinkedIn inbox assistant' so replies sound like you."*
-   - **If the working folder holds a Claude brain** (`CLAUDE.md` with a
-     `knowledge/` folder), also read `CLAUDE.md` and `knowledge/my-voice.md`,
-     and check `knowledge/my-people.md` for anyone who wrote. For voice,
-     people and how to work with the user, the brain wins over about-me,
-     because it's the file they keep up to date. The risk acknowledgment and
-     check times still come from about-me.
+   - **If the user has a Claude brain** (`CLAUDE.md` and `my-*.md` files in
+     the project's Context, or, from an older setup, `CLAUDE.md` with a
+     `knowledge/` folder in the working folder), also read `CLAUDE.md` and
+     `my-voice.md`, check `my-people.md` for anyone who wrote, and check the
+     project's memory, which wins where it's newer. For voice, people and
+     how to work with the user, the brain wins over about-me, because it's
+     what they keep up to date. The risk acknowledgment and check times
+     still come from about-me.
 2. Read `references/reading-linkedin.md`. It holds the rules that keep the
    account safe and the read accurate. Follow all of them.
 3. **Demo mode.** If the user said "demo mode", the report is being shown to a

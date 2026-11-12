@@ -1,6 +1,6 @@
 # LinkedIn Inbox Assistant
 
-*Version 0.1.2 · November 2026 · from Jeff Chastain, Admentus*
+*Version 0.1.3 · November 2026 · from Jeff Chastain, Admentus*
 
 Three times each weekday it checks your LinkedIn messages and tells you who
 wrote. For each new message, it drafts a reply you can copy, edit and send

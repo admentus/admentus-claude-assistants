@@ -1,64 +1,90 @@
 ---
 name: update-claude-brain
-description: Reviews or changes the user's Claude brain (their CLAUDE.md and knowledge files). Use when the user says "update my brain", "remember that...", "add this to my brain", "my brain is wrong about...", "forget that...", "what do you know about me", "show me my brain", "update my project instructions", or asks Claude to keep a fact about their business, clients, voice or week for next time.
+description: Reviews or changes the user's Claude brain (their CLAUDE.md and knowledge files in their Claude project, and what the project's memory has learned since). Use when the user says "update my brain", "remember that...", "add this to my brain", "my brain is wrong about...", "forget that...", "what do you know about me", "show me my brain", "refresh my brain", "update my project instructions", or asks Claude to keep a fact about their business, clients, voice or week for next time.
 ---
 
 # Update or review my Claude brain
 
-The brain is `CLAUDE.md`, `project-instructions.md` and the `knowledge/`
-folder in the user's working folder, normally their Claude project's folder.
-If this chat has no folder, ask them to start it from their project's page
-(**Projects** in the left sidebar, then their project) so you can reach the
-files. If the folder has no brain, say so and offer: *"Say 'set up my Claude
-brain' and I'll build it with you."*
+The brain lives in the user's Claude project:
+
+- **The brain files** in the project's Context: `CLAUDE.md`, `my-business.md`,
+  `my-people.md`, `my-voice.md`, `my-week.md`, `my-tools.md` and
+  `interview-notes.md`.
+- **The project's memory:** what they've told Claude since. Where memory and
+  a brain file disagree, memory is newer and wins.
+- **The project's Instructions:** a short version that points at the files.
+
+If this chat isn't in their project, ask them to start it from the project's
+page (**Projects** in the left sidebar, then the project). If the project has
+no brain files, say so and offer: *"Say 'set up my Claude brain' and I'll
+build it with you."* If the brain files are only in a folder (an older
+setup), offer: *"Say 'move my brain into my project' and I'll put it where
+every chat can read it."*
 
 ## Reviewing: "What do you know about me?"
 
-Read `CLAUDE.md` and every file in `knowledge/` except
-`interview-notes.md`. Summarize in plain bullets under short headings (your
-work, your clients, your week, your people, how you write, how you want me to
-work). Don't recite the files. Then ask: *"Anything to change?"*
+Read `CLAUDE.md`, the other brain files except `interview-notes.md`, and the
+project's memory. Summarize in plain bullets under short headings (your work,
+your clients, your week, your people, how you write, how you want me to
+work), with memory's version wherever it's newer. Don't recite the files.
+Then ask: *"Anything to change?"*
 
-## Changing or adding something
+## Remembering something: "Remember that..."
 
-1. **Pick the right file.** Detail goes in the knowledge file it belongs to.
-   `CLAUDE.md` holds only the short version and should stay about one page.
+A fact, a preference or a correction goes in the project's memory.
 
-   | It's about | File |
-   |---|---|
-   | what they sell, who they serve, how clients find them, goals | `knowledge/my-business.md` |
-   | a client, partner, contact | `knowledge/my-people.md` |
-   | how they write, words to use or avoid, samples | `knowledge/my-voice.md` |
-   | their week, time, priorities | `knowledge/my-week.md` |
-   | their tools | `knowledge/my-tools.md` |
-   | how Claude should work with them, always/never rules | `CLAUDE.md` |
-
-2. **Show the change before making it:** the line as it is (or "new") and the
-   line as it will be. Use their words.
-3. **Make it** once they agree, or straight away if they told you exactly
+1. **Show it first** in their words, one line, unless they told you exactly
    what to write.
-4. **Removing anything:** confirm first. Never delete a whole file.
-5. **Update the date** at the bottom of `CLAUDE.md`: *"Updated <date>."*
-6. **Keep a record:** append a dated entry to `knowledge/interview-notes.md`
-   with what they asked for, in their words, if that file exists.
-7. **Keep the project's instructions in step.** If the change touches what
-   `project-instructions.md` covers (who they are, what they're focused on,
-   how to work with them, how they write), update that file too. Then set
-   the project's instructions yourself if you can, or show the new text and
-   tell them to paste it over the old: on the project's page, click the
-   instructions to edit them. Changes to people, clients or knowledge-file
-   detail stay out of it. If there's no `project-instructions.md` yet, offer
-   once: *"Say 'move my brain into a project' and I'll set that up."*
+2. **Save it to the project's memory.** One fact per line, dated.
+3. **Removing something** ("forget that..."): confirm, then take it out of
+   memory. If it's in a brain file too, note in memory that it no longer
+   applies, so memory wins.
+
+## A bigger change: "Update my brain"
+
+A new service, a new client list, a rewrite of how they write: rewrite the
+brain file it belongs to.
+
+| It's about | File |
+|---|---|
+| what they sell, who they serve, how clients find them, goals | `my-business.md` |
+| clients, partners, contacts | `my-people.md` |
+| how they write, words to use or avoid, samples | `my-voice.md` |
+| their week, time, priorities | `my-week.md` |
+| their tools | `my-tools.md` |
+| how Claude should work with them, always/never rules | `CLAUDE.md` |
+
+1. **Show the change** before making it: the lines as they are and as they
+   will be. Use their words.
+2. **Write the new version** of the whole file, with anything memory knows
+   about that subject folded in, and the date at the bottom.
+3. **Put it in the project's Context.** If you can replace the file there
+   yourself, do. If you can only add files, add the new version, then tell
+   the user exactly which old file to remove from **Context** on the
+   project's page. Two copies of one file confuse every chat until the old
+   one is gone. If you can't add files at all, give them the file to add.
+4. **Keep the Instructions in step.** If the change touches what the
+   project's Instructions say (who they are, what they're focused on, how to
+   work with them, how they write), give them the new paragraph from the
+   template in the set-up-claude-brain skill's `references/templates.md`.
+   Set it yourself if you can; otherwise they paste it over the old one.
+
+## Refreshing: "Refresh my brain"
+
+When memory has built up, fold it into the brain files: for each file memory
+has news for, do steps 1 to 3 above. Then, with the user's OK, take the
+folded-in lines out of memory. Offer this once if memory holds a lot of
+brain facts; don't push it.
 
 ## The privacy rule still applies
 
-Don't save client account numbers, passwords, health information or
-confidential deal terms, even if asked. Say why in one line and offer a safer
-version: *"I'll save 'Dana, CFO at a 40-person distributor, our biggest
-client' instead."*
+The brain and memory are stored in the user's Claude account. Don't save
+client account numbers, passwords, health information or confidential deal
+terms, even if asked. Say why in one line and offer a safer version: *"I'll
+save 'Dana, CFO at a 40-person distributor, our biggest client' instead."*
 
 ## Things worth offering to remember
 
 When the user corrects a draft the same way twice ("don't say 'reach out'"),
-or mentions a new client or offer, ask once: *"Want me to add that to your
-brain?"* Don't ask more than once per conversation.
+or mentions a new client or offer, ask once: *"Want me to remember that?"*
+Don't ask more than once per conversation.

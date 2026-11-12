@@ -13,8 +13,10 @@ with manufacturers, so I'll skip that one."*
 - **Their words, not yours.** Save what they said. Don't polish it into
   marketing language.
 - **"Skip" is always fine.** Write "not answered" and move on.
-- **Save after every answer** to `knowledge/interview-notes.md` before asking
-  the next question (format below). If the session ends, nothing is lost.
+- **Save after every answer,** before asking the next question (format
+  below): to `interview-notes.md` in the chat's folder, or, if the chat has
+  no folder, to the project's memory as "Claude Brain interview, in
+  progress". If the session ends, nothing is lost.
 - **Keep time.** After part 3, say roughly how much is left: *"Two short
   parts to go, about five minutes."*
 
@@ -63,7 +65,7 @@ with manufacturers, so I'll skip that one."*
     Ask questions first, or just take a first pass? Anything it should never
     do, or always check with you before doing?"**
 
-## Saving answers: knowledge/interview-notes.md
+## Saving answers: interview-notes.md
 
 Create it on the first answer with this heading, then append each answer:
 
@@ -71,8 +73,8 @@ Create it on the first answer with this heading, then append each answer:
 # Interview notes
 
 Raw answers from the Claude Brain interview, saved as they were given.
-The brain files are written from these. Delete this file if you'd rather not
-keep it.
+The brain files are written from these. Remove this file from the project if
+you'd rather not keep it.
 
 ## <date>
 
@@ -86,6 +88,6 @@ keep it.
 Mark anything taken from their website or pasted text with "(from your
 website)" or "(from what you pasted)", and only after they've confirmed it.
 
-**Resuming:** if `knowledge/interview-notes.md` already exists, read it, tell
-the user which part they reached, and continue from the first question with
-no answer.
+**Resuming:** if `interview-notes.md` is in the chat's folder, or the
+project's memory has the in-progress note, read it, tell the user which part
+they reached, and continue from the first question with no answer.

@@ -9,20 +9,23 @@ Write each file from the interview notes. Rules for all of them:
 - **CLAUDE.md stays short:** about one page, under 60 lines. Detail goes in
   the knowledge files.
 - **No confidential details anywhere:** no account numbers, passwords, health
-  information or confidential deal terms. If an answer contained one, leave it
-  out and tell the user you did.
+  information or confidential deal terms. These files are stored in the
+  user's Claude account. If an answer contained one, leave it out and tell
+  the user you did.
 - Replace everything in `<angle brackets>`. Delete any section that would be
   empty except for "not answered" in a knowledge file; keep it in CLAUDE.md.
 
 ---
 
-## CLAUDE.md (in the folder's top level)
+## CLAUDE.md
 
 ```markdown
 # About me: read this first
 
 This is my Claude brain. It tells you who I am and how to work with me. The
-files in `knowledge/` hold the detail: read the ones a task needs.
+other brain files in this project hold the detail: read the ones a task
+needs. This project's memory holds what I've told you since; where it
+disagrees with these files, memory is newer and wins.
 
 ## Who I am
 
@@ -42,25 +45,25 @@ files in `knowledge/` hold the detail: read the ones a task needs.
 
 <Three to five short rules drawn from their samples and question 13, such as
 "short sentences", "no exclamation points", "signs off with just my first
-name".> Read `knowledge/my-voice.md` before writing anything I'll send or
-post.
+name".> Read `my-voice.md` before writing anything I'll send or post.
 
 ## Always and never
 
 - Always: <from question 15, or "check with me before sending anything">
 - Never: <from questions 13 and 15>
 - Never put client account numbers, health information, passwords or
-  confidential deal terms in these files or in anything you draft.
+  confidential deal terms in these files, in memory, or in anything you
+  draft.
 
 ## Where the detail is
 
 | File | Read it when |
 |---|---|
-| `knowledge/my-business.md` | the task touches what I sell, who I serve, or how clients find me |
-| `knowledge/my-people.md` | a client, partner or contact is named |
-| `knowledge/my-voice.md` | you're writing anything in my voice |
-| `knowledge/my-week.md` | planning, priorities, or where my time goes |
-| `knowledge/my-tools.md` | the task involves my email, calendar, contacts or files |
+| `my-business.md` | the task touches what I sell, who I serve, or how clients find me |
+| `my-people.md` | a client, partner or contact is named |
+| `my-voice.md` | you're writing anything in my voice |
+| `my-week.md` | planning, priorities, or where my time goes |
+| `my-tools.md` | the task involves my email, calendar, contacts or files |
 
 *Built <date> by the Claude Brain interview. Say "update my brain" to change
 anything.*
@@ -68,12 +71,11 @@ anything.*
 
 ---
 
-## project-instructions.md (in the folder's top level)
+## Project instructions
 
-The short version that goes in the project's instructions. It says the same
-things as `CLAUDE.md`, shorter. Under 200 words. No client names, no people,
-nothing private: it's stored in the user's Claude account and shows on every
-device where they open the project.
+The short version that goes in the project's Instructions. It says the same
+things as `CLAUDE.md`, shorter, and points Claude at the rest. Under 200
+words. No people or clients here: they belong in `my-people.md`.
 
 ```markdown
 I'm <name>, <role> at <firm>. <One sentence: what I do and who for.>
@@ -87,17 +89,16 @@ How I write:
 - <three short rules from "How I write" in CLAUDE.md>
 - Never: <the never lines about writing>
 
-My full Claude brain is in this project's folder: CLAUDE.md and a knowledge
-folder (my business, my people, my voice, my week, my tools). When the folder
-is available, read CLAUDE.md before any work about my business, my clients,
-my week or anything written in my voice, then the knowledge files it points
-to. When it isn't (on my phone or the web), work from these instructions and
-tell me if a task needs something from my files.
+My Claude brain is in this project's Context: CLAUDE.md plus my business,
+people, voice, week and tools files. Read CLAUDE.md before any work about my
+business, my clients, my week or anything written in my voice, then the files
+it points to. This project's memory holds what I've told you since; where it
+disagrees with those files, memory is newer and wins.
 ```
 
 ---
 
-## knowledge/my-business.md
+## my-business.md
 
 ```markdown
 # My business
@@ -127,7 +128,7 @@ engagement works.>
 
 ---
 
-## knowledge/my-people.md
+## my-people.md
 
 ```markdown
 # My people
@@ -141,7 +142,7 @@ First names and context only. Nothing confidential.
 
 ---
 
-## knowledge/my-voice.md
+## my-voice.md
 
 ```markdown
 # My voice
@@ -167,7 +168,7 @@ directness, how they open and close, formatting habits.>
 
 ---
 
-## knowledge/my-week.md
+## my-week.md
 
 ```markdown
 # My week
@@ -185,7 +186,7 @@ handing work to an assistant.>
 
 ---
 
-## knowledge/my-tools.md
+## my-tools.md
 
 ```markdown
 # My tools

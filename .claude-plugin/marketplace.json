@@ -12,7 +12,7 @@
       "name": "claude-brain",
       "displayName": "Claude Brain",
       "source": "./plugins/claude-brain",
-      "description": "A 20-minute interview that teaches Claude your practice, your clients and your voice. It writes a CLAUDE.md file and a small knowledge base into a folder on your computer, where you can read and edit them, so every assistant starts out knowing you. Say \"Set up my Claude brain\" to start.",
+      "description": "A 20-minute interview that teaches Claude your practice, your clients and your voice. It saves what it learns into a Claude project, so every chat you start there knows you, on your computer and your phone, and every assistant starts out knowing you. Say \"Set up my Claude brain\" to start.",
       "author": {
         "name": "Admentus",
         "url": "https://admentus.com"
@@ -24,7 +24,8 @@
         "about me",
         "voice",
         "context",
-        "interview"
+        "interview",
+        "projects"
       ]
     },
     {

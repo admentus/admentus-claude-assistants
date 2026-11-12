@@ -17,7 +17,7 @@ there's no risk to your account. Setup takes about ten minutes."*
 ## 2. Check the folder
 
 Everything is saved in a `linkedin-posts` folder inside the folder this chat
-works in: ideally their Claude project's folder, next to their brain. If this
+works in: ideally their Claude project's folder. If this
 chat has no folder, ask them to start it from their project's page
 (**Projects** in the left sidebar, then their project) and say "Set up my
 post assistant" there. No project yet: **Projects**, then **+**, then **Start
@@ -29,8 +29,8 @@ Create `linkedin-posts/` and `linkedin-posts/drafts/`.
 
 ## 3. Read their brain first
 
-If the folder has a Claude brain (`CLAUDE.md` with a `knowledge/` folder),
-read `CLAUDE.md`, `knowledge/my-business.md` and `knowledge/my-voice.md`.
+If they have a Claude brain (`CLAUDE.md` and `my-*.md` files in the project's Context, or, from an older setup, `CLAUDE.md` with a `knowledge/` folder in the working folder), read `CLAUDE.md`,
+`my-business.md` and `my-voice.md`, and check the project's memory.
 Fill in every answer below they already cover, show what you took in one short
 message, and ask only what's left. If they have no brain, mention once that
 "Set up my Claude brain" makes every assistant better, and carry on.
